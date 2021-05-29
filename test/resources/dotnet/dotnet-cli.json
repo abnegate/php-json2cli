@@ -1,0 +1,42 @@
+{
+  "install": {
+    "runtime": "dotnet",
+    "codePath": "test/resources/dotnet/install.csx",
+    "function": "Execute",
+    "parameters": {
+      "path": {
+        "desc": "The path to install",
+        "default": "app",
+        "validator": {
+          "type": "Utopia\\Validator\\Text",
+          "parameters": [
+            0
+          ]
+        },
+        "optional": true
+      },
+      "version": {
+        "desc": "The version to install",
+        "default": "latest",
+        "validator": {
+          "type": "Utopia\\Validator\\Text",
+          "parameters": [
+            0
+          ]
+        },
+        "optional": true
+      },
+      "composeFile": {
+        "desc": "The relative path to the docker-compose file.",
+        "default": "docker-compose.yml",
+        "validator": {
+          "type": "Utopia\\Validator\\Text",
+          "parameters": [
+            0
+          ]
+        },
+        "optional": true
+      }
+    }
+  }
+}

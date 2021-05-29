@@ -1,0 +1,21 @@
+{
+  "name": "jakebarnby/json2cli",
+  "description": "Run dynamic JSON based CLI's with mix and match support for task runtimes.",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Json2CLI\\": "src/Json2CLI"
+    }
+  },
+  "require": {
+    "utopia-php/cli": "^0.11.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jake Barnby",
+      "email": "jakeb994@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev"
+}
